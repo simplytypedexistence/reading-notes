@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@main
         with:
-          token: ${{ secrets.PERMIT_TOKEN }}
+          token: ${{ secrets.ACTION_API }}
       - name: Make the scripts executable
         run: chmod +x generate-pdf.sh
       - name: Run the script
