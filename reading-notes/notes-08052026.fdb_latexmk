@@ -1,0 +1,27 @@
+# Fdb version 4
+["xdvipdfmx"] 1778246719.16848 "notes-08052026.xdv" "notes-08052026.pdf" "notes-08052026" 1778246719.34992 0
+  "notes-08052026.xdv" 1778246719.15729 756 eace136f976be454c339aeb2b6eb5b76 "xelatex"
+  (generated)
+  "notes-08052026.pdf"
+  (rewritten before read)
+["xelatex"] 1778246719.03035 "/Users/parnian/Documents/PhD/work-nominal-sets/notes-08052026.tex" "notes-08052026.xdv" "notes-08052026" 1778246719.34978 0
+  "/Users/parnian/Documents/PhD/work-nominal-sets/notes-08052026.tex" 1778246718.73151 115 b4db003e5c631e4ca70629e2dbc27acd ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty" 1748806692 2222 27db7d52163edae53881b71ff62e754e ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty" 1748806692 4173 1b3e76addfb8afcb47db4811d66e1dc6 ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty" 1761946296 88471 b1bb09142edddebd46ba986341b867bd ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty" 1748806692 4474 c510a88aa5f51b8c773b50a7ee92befd ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty" 1748806692 2444 9983e1d0683f102e3b190c64a49313aa ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/base/exscale.sty" 1761946296 2581 e3b93c96ce990e6e2ffc819a28b77ea9 ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/base/size12.clo" 1748806692 8449 8dc66c6c313c8eb2d774af83bca435dd ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/extsizes/extarticle.cls" 1137110130 20602 3112294ba237d94ce4a1502cfef3594f ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-xetex.def" 1774899586 32929 8929da7784ca1ec53648274ffd1aaee1 ""
+  "/usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf" 1770478701 43630 e9fa012910491fe5ae08a72c3c2997a7 ""
+  "/usr/local/texlive/2026/texmf-var/web2c/xetex/xelatex.fmt" 1776465328 5954931 a6215917f5289fcabe1729f7572cbdfd ""
+  "/usr/local/texlive/2026/texmf.cnf" 1776465279.62741 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
+  "notes-08052026.aux" 1778246719.15615 133 21eb31371411bd6cb4c1ead1dc2398f6 "xelatex"
+  "notes-08052026.tex" 1778246718.73151 115 b4db003e5c631e4ca70629e2dbc27acd ""
+  (generated)
+  "notes-08052026.aux"
+  "notes-08052026.log"
+  "notes-08052026.xdv"
+  (rewritten before read)

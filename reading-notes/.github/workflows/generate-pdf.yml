@@ -1,0 +1,42 @@
+name: latex-pdf-generator
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  tex-job:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: ${{ github.workspace }}/Scripts
+    steps:
+      - uses: actions/checkout@main
+        with:
+          token: ${{ secrets.PERMIT_TOKEN }}
+      # - name: Make a directory for fonts
+      #   run: mkdir /usr/share/fonts
+      # - name: Add the required fonts
+      #   run: sudo cp ${{ github.workspace }}/fonts/* /usr/share/fonts
+      # - name: Regenerate font cache
+      #   run: fc-cache -f -v
+      - name: Make the scripts executable
+        run: chmod +x generate-pdf.sh
+      - name: Run the script
+        run: ./generate-pdf.sh
+      - name: Upload The Pdf
+        uses: actions/upload-artifact@v4
+        with:
+          name: Main-Dissertion
+          path: ${{ github.workspace }}/Theory/Main-Dissertion.pdf
+          retention-days: 5
+      # - name: Upload The Second Pdf
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: th2
+      #     path: ${{ github.workspace }}/Code/Tex/th2.pdf
+      #     retention-days: 5
