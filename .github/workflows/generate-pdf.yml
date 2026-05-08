@@ -8,23 +8,18 @@ permissions:
   id-token: write
 
 jobs:
-  tex-job:
+  build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash
-        working-directory: ${{ github.workspace }}/Scripts
     steps:
-      - uses: actions/checkout@main
+      - name: Set up Git repository
+        uses: actions/checkout@v6
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v4
         with:
-          token: ${{ secrets.ACTION_API }}
-      - name: Make the scripts executable
-        run: chmod +x generate-pdf.sh
-      - name: Run the script
-        run: ./generate-pdf.sh
-      - name: Upload The Pdf
-        uses: actions/upload-artifact@v4
+          root_file: notes
+          latexmk_use_xelatex: true
+      - name: Upload PDF
+        uses: actions/upload-artifact@v6
         with:
-          name: reading-notes
-          path: ${{ github.workspace }}/reading-notes/reading-notes/notes-08052026
-          retention-days: 5
+          name: PDF
+          path: yourfile.pdf
