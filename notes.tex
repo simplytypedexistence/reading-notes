@@ -1,0 +1,65 @@
+\documentclass[12pt]{extarticle}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{textcomp}
+\usepackage{cite}
+\usepackage{multicol}
+\usepackage{setspace}
+\usepackage{changepage}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}{Correlation}[thm]
+\newtheorem{defn}{Definition}[section]
+\newtheorem{prop}{Preposition}[section]
+\newtheorem{lmm}{Lemma}[section]
+\newtheorem{conj}{Conjecture}[section]
+\newtheorem{exm}{Example}[section]
+\newtheorem{rem}{Remark}[section]
+\newtheorem{note}{Note}[section]
+\newtheorem{alg}{Algorithm}[section]
+
+\setcounter{thm}{1}
+\setcounter{cor}{1}
+\setcounter{defn}{1}
+\setcounter{prop}{1}
+\setcounter{lmm}{1}
+\setcounter{conj}{1}
+\setcounter{exm}{1}
+\setcounter{rem}{1}
+\setcounter{note}{1}
+\setcounter{alg}{1}
+
+\begin{document}
+\section{Introduction}
+
+I decided to write a work reference for myself as I realized it is of immense difficulty to keep too many open tabs in my mind. Besides, I believe it is going to provide people with better context, should they decide on attending my presentations. Therefore, the idea of a project to keep track of the context of the papers and/or books I study was born.
+
+These notes are available for public consumption under MIT license.
+
+P.S: \emph{You may find some music recommendations within the text. Click on the link and enjoy!}    
+\section{Preliminaries}
+This section contains the prerequisites to have a better understanding of the papers.
+\subsection{Category Theory}
+\begin{defn}[Category\cite{Awodey2010-AWOCTA}]
+    A \emph{category} consists of the following data:
+    \begin{enumerate}
+        \item \emph{Objects}: \(A, B, C,\dots\)
+        \item \emph{Arrows}: \(f, g, h,\dots\)
+        \item For each arrow \(f : A \rightarrow B\), there are given objects \(dom(f)\) \emph{[read: "domain of f"]} and \(cod(f)\) \emph{[read: "codomain of f"]}, respectively, and namely \(A\) and \(B\) in the example above.
+        \item Given arrows \(f: A \rightarrow B\) and \(g : B \rightarrow C\) \([dom(f) = cod(f)]\), there is a given arrow \(g \circ f\ : A \rightarrow C \), called the \emph{composition of \(f\) and \(g\)}.
+        \item For each object \(A\), there is a given arrow \(1_{A} : A \rightarrow A\), namely the identity arrow of \(A\).
+    \end{enumerate}
+    which satisfy the following rules:
+    \begin{itemize}
+        \item \emph{Assoiativity}: \( \forall f : A \rightarrow B, g: B \rightarrow C, h: C \rightarrow D, \ h \circ (g \circ f) = (h \circ g) \circ f\)
+        \item \emph{Unit}: \( \forall f : A \rightarrow B, \ f \circ 1_A = f = 1_B \circ f\)
+    \end{itemize}
+\end{defn}
+
+\subsection{Nominal Sets}
+
+\section{Papers}
+
+\bibliographystyle{abbrv}
+\bibliography{ref}
+\end{document}
