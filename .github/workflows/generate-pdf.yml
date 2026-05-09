@@ -16,10 +16,10 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v4
         with:
-          root_file: notes-08052026.tex
+          root_file: algebraic-effects-nominal-sets/notes.tex
           latexmk_use_xelatex: true
       - name: Upload PDF
         uses: actions/upload-artifact@v6
         with:
           name: PDF
-          path: notes-08052026.pdf
+          path: algebraic-effects-nominal-sets/notes.pdf
