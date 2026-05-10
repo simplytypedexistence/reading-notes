@@ -32,7 +32,7 @@
 \begin{document}
 \section{Introduction}
 
-Recently, I realized that it is of immense difficulty to keep too many open tabs in my mind while doing research. Besides, I believe providing people with better context is a rewarding activity, specially when they decide to attend my presentations. Therefore, the idea of a project to keep track of the context of the papers and/or books I study, was born.
+Recently, I realized that it is of immense difficulty to keep too many open tabs in my mind while doing research. Besides, I believe providing people with better context regarding my research is a rewarding activity, specially when they decide to attend my presentations. Therefore, the idea of a project to keep track of the context of the papers and/or books I study, was born.
 
 These notes are available publically under MIT license.
 
@@ -54,6 +54,17 @@ This section contains the prerequisites to have a better understanding of the pa
         \item \emph{Assoiativity}: \( \forall f : A \rightarrow B, g: B \rightarrow C, h: C \rightarrow D, \ h \circ (g \circ f) = (h \circ g) \circ f\)
         \item \emph{Unit}: \( \forall f : A \rightarrow B, \ f \circ 1_A = f = 1_B \circ f\)
     \end{itemize}
+\end{defn}
+
+Mappings between the categories are called \emph{functors}. They map one category to another while preserving its sturcture. 
+
+\begin{defn}[Functors]
+    A \emph{functor} \(F : C \rightarrow D\) between categories \(\mathbf{C}\) and \(\mathbf{D}\) is a mapping of objects to objects and arrows to arrows in such a way that:
+    \begin{enumerate}
+        \item \(F (f: A \rightarrow B) = F(f) : F(A) \rightarrow F(B)\)
+        \item \(F(1_A) = 1_{F(A)}\)
+        \item \(F(g \circ f) = F(g) \circ F(f)\)
+    \end{enumerate}
 \end{defn}
 
 \subsection{Nominal Sets}
