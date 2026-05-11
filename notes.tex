@@ -1,6 +1,7 @@
 \documentclass[12pt]{extarticle}
 \usepackage{amsmath}
 \usepackage{amsfonts}
+\usepackage{amssymb}
 \usepackage{textcomp}
 \usepackage{cite}
 \usepackage{multicol}
@@ -40,7 +41,8 @@ P.S: \emph{You may find some music recommendations within the text. Click on the
 \section{Preliminaries}
 This section contains the prerequisites to have a better understanding of the papers.
 \subsection{Category Theory}
-\begin{defn}[Category\cite{Awodey2010-AWOCTA}]
+The main resource(s) for this topic is \cite{Awodey2010-AWOCTA}.
+\begin{defn}[Category]
     A \emph{category} consists of the following data:
     \begin{enumerate}
         \item \emph{Objects}: \(A, B, C,\dots\)
@@ -70,6 +72,23 @@ Mappings between the categories are called \emph{functors}. They map one categor
 \subsection{Nominal Sets}
 
 \section{Papers}
+
+\subsection{An Equational Axiomatization of Dynamic Threads via Algebraic Effects}
+
+This section is dedicated to the notes taken from the paper \emph{An Equational Axiomatization of Dynamic Threads via Algebraic Effects} \cite{10.1145/3776706}.
+
+First we begin with the definition of \emph{Partially Ordered Multisets} or \emph{pomsets}, introduced in \cite{Pratt1986ModelingCW}. The name is self-explanatory for intuition, so we shall proceed to the formal definition.
+
+\begin{defn}[Pomsets]
+    A \emph{labeled partial order (LPO)} is a 4-tuple \((V, \Sigma, \leqslant, \mu)\) consisting of 
+    \begin{enumerate}
+        \item a \emph{vertex set} \(V\), typically modeling \emph{events};
+        \item an \emph{alphabet} \(\Sigma\) (for symbol set), typically modeling \emph{actions} such as the arrival of integer 3 t port \(Q\), the transition of pin-13 of IC-7 to 4.5 volts, or the disappearance of the 14.3 MHz component of a signal;
+        \item a \emph{partial order} \(\leqslant\) on \(V\), with \(e \leqslant f\) typically being interpreted as event \(e\) necessarily preceding event \(f\) in time; and 
+        \item a \emph{labeling function} \(\mu : V \rightarrow \Sigma\) assigning symbols to vertices, each labeled event representing an \(occurrece\) of the action labeling it, with the same action possibly having multiple occurrence (i.e. \(\mu\) need not be injective).
+    \end{enumerate}
+    A \emph{pomset} is the isomorphism class of an LPO, denoted \([V, \Sigma, \leqslant, \mu]\).
+\end{defn}
 
 \bibliographystyle{abbrv}
 \bibliography{ref}
