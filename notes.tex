@@ -29,6 +29,7 @@
 \setcounter{rem}{1}
 \setcounter{note}{1}
 \setcounter{alg}{1}
+\linespread{1.25}
 
 \begin{document}
 \section{Introduction}
@@ -89,6 +90,25 @@ First we begin with the definition of \emph{Partially Ordered Multisets} or \emp
     \end{enumerate}
     A \emph{pomset} is the isomorphism class of an LPO, denoted \([V, \Sigma, \leqslant, \mu]\).
 \end{defn}
+
+The key idea of their work is to take thread IDs seriously: their algebraic framework supports abstract names/IDs, as well as binding and passing them. 
+Their language consists of the following commands.
+\begin{itemize}
+    \item \texttt{fork(\(a.x(a), y\))}[of the type \texttt{\(((tid \rightarrow t) \rightarrow t \rightarrow t)\)}]: spawn a new child thread with ID \(a\), run the continuation \(y\) through it while concurrently running continuation \(x\) in the parent thread. The ID of the child is (obviously) passed to the parent thread. You may see the continuation as going on through a code block.
+    \item \texttt{wait}: analoguous with the same programming concept.
+    \item \texttt{stop}: ends the current thread as soon as it is called, and unblocks all the waiting threads with respect to the one stopped.
+    \item \texttt{act}\(_\sigma\): primitive atomic actions like going forward. It's possible to combine this with other algebraic effects (e.g. access to look at concurrent shared memory) but not for now [seems that they also dodge shared memory for the sake of simplicity].
+\end{itemize}
+
+The main contribution is a theory with eight equations between the four operations above, and a syntax-free representation theorem of terms modulo equations. They also show that for closed terms, the representation exactly matches the long-established model of true concurrency based on pomsets.
+
+Huh?
+
+Let's dive in.\newline
+\textbf{What does fork do?}\\
+\textbf{What does fork do?}\\
+\textbf{What does fork do?}\\
+\textbf{What does fork do?}\\
 
 \bibliographystyle{abbrv}
 \bibliography{ref}
